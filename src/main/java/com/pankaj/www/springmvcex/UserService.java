@@ -9,8 +9,15 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
     List<User> users = new ArrayList<User>();
+    
 
     public void saveUser(User user) {
         users.add(user);
+    }
+
+
+    public List<User> getUsers() {
+
+        return users;
     }
 }
